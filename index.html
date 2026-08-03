@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nostra</title>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Offer Bar -->
+  <div class="top-offer-bar" id="offerBar">
+    <p> Super Saver Deal: Free Shipping on all orders over $1999! </p>
+    <i class="fa-solid fa-xmark" id="closeOfferBtn"></i>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><h1>Nostra</h1></a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="collections.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <!-- Mobile Side Navbar -->
+    <div class="side-navbar" id="sideNav">
+      <i class="fa-solid fa-xmark close-sidenav" id="closeSideNav"></i>
+      <ul class="side-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Banner -->
+  <section class="main-section">
+    <img src="images/main-banner.jpg" alt="Nostra Banner" class="main-img">
+    <div class="main-content">
+      <h2>Level Up Your Style</h2>
+      <p>Explore top tier streetwear, ethnic wear, and daily casuals.</p>
+      <a href="collections.html" class="btn-primary">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section-container">
+    <h2 class="section-title">Shop by Category</h2>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="images/nike/nike1.jpg" alt="Men Wear">
+        <div class="category-overlay">
+          <h3>Men's Wear</h3>
+          <a href="collections.html" class="btn-light">Explore</a>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="images/biba/biba1.jpg" alt="Women Wear">
+        <div class="category-overlay">
+          <h3>Women's Wear</h3>
+          <a href="collections.html" class="btn-light">Explore</a>
+        </div>
+      </div>
+      <div class="category-card">
+        <img src="images/nike/nike4.jpg" alt="Sports Wear">
+        <div class="category-overlay">
+          <h3>Sports & Activewear</h3>
+          <a href="collections.html" class="btn-light">Explore</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Brands Section -->
+  <section class="section-container bg-light">
+    <h2 class="section-title">Our Featured Brands</h2>
+    <p class="section-subtitle">Click on any brand to view its exclusive collection</p>
+    <div class="brands-grid">
+      <a href="collections.html?brand=nike" class="brand-badge"><i class="fa-solid fa-bolt"></i> Nike</a>
+      <a href="collections.html?brand=adidas" class="brand-badge"><i class="fa-solid fa-check-double"></i> Adidas</a>
+      <a href="collections.html?brand=puma" class="brand-badge"><i class="fa-solid fa-cat"></i> Puma</a>
+      <a href="collections.html?brand=uspolo" class="brand-badge"><i class="fa-solid fa-crown"></i> US Polo</a>
+      <a href="collections.html?brand=basics" class="brand-badge"><i class="fa-solid fa-shirt"></i> Basics</a>
+      <a href="collections.html?brand=biba" class="brand-badge"><i class="fa-solid fa-gem"></i> Biba</a>
+    </div>
+  </section>
+
+  <!-- Most Wanted Section -->
+  <section class="section-container">
+    <h2 class="section-title">Most Wanted Items</h2>
+    <div class="product-grid-4">
+      <div class="product-card">
+        <img src="images/nike/nike2.jpg" alt="Nike Essential Hoodie">
+        <div class="product-info">
+          <h3>Nike Air Sport Hoodie</h3>
+          <p class="brand-name">Nike</p>
+          <p class="price">$2499</p>
+          <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/adidas/adidas1.jpg" alt="Adidas Tracksuit">
+        <div class="product-info">
+          <h3>Adidas Original Tracksuit</h3>
+          <p class="brand-name">Adidas</p>
+          <p class="price">$3299</p>
+          <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/biba/biba2.jpg" alt="Biba Floral Anarkali">
+        <div class="product-info">
+          <h3>Biba Floral Silk Ethnic Dress</h3>
+          <p class="brand-name">Biba</p>
+          <p class="price">$2899</p>
+          <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/uspolo/uspolo1.jpg" alt="US Polo Casual Shirt">
+        <div class="product-info">
+          <h3>US Polo Slim Fit Cotton Shirt</h3>
+          <p class="brand-name">US Polo</p>
+          <p class="price">$2199</p>
+          <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accessories Section (8 Items) -->
+  <section class="section-container bg-light">
+    <h2 class="section-title">Check Out Our Accessories</h2>
+    <div class="product-grid-4">
+      <div class="product-card">
+        <img src="images/accessories/acc1.jpg" alt="Leather Belt">
+        <div class="product-info">
+          <h3>Classic Leather Belt</h3>
+          <p class="price">$799</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/accessories/acc2.jpg" alt="Sports Cap">
+        <div class="product-info">
+          <h3>Unisex Athletic Cap</h3>
+          <p class="price">$499</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/accessories/acc3.jpg" alt="Polarized Sunglasses">
+        <div class="product-info">
+          <h3>Urban Polarized Sunglasses</h3>
+          <p class="price">$1299</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/accessories/acc4.jpg" alt="Minimalist Watch">
+        <div class="product-info">
+          <h3>Minimalist Analog Watch</h3>
+          <p class="price">$2499</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/accessories/acc5.jpg" alt="Canvas Backpack">
+        <div class="product-info">
+          <h3>Daily Canvas Backpack</h3>
+          <p class="price">$1599</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/accessories/acc6.jpg" alt="Leather Wallet">
+        <div class="product-info">
+          <h3>Bifold Leather Wallet</h3>
+          <p class="price">$899</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/accessories/acc7.jpg" alt="Cotton Socks Pack">
+        <div class="product-info">
+          <h3>Ankle Cotton Socks (Pack of 3)</h3>
+          <p class="price">$399</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="images/accessories/acc8.jpg" alt="Beanie Hat">
+        <div class="product-info">
+          <h3>Winter Knit Beanie</h3>
+          <p class="price">$599</p>
+          <button class="add-cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>Nostra</h3>
+        <p>Your one-stop destination for modern trends, premium streetwear, and everyday fashion essentials.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nostra E-Commerce. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

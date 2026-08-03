@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections | Nostra</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Offer Bar -->
+  <div class="top-offer-bar" id="offerBar">
+    <p> Super Saver Deal: Free Shipping on all orders over $1999! </p>
+    <i class="fa-solid fa-xmark" id="closeOfferBtn"></i>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-logo">
+      <a href="index.html"><h1>Nostra</h1></a>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html" class="active">Collections</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-icons">
+      <a href="collections.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="#"><i class="fa-solid fa-bag-shopping"></i> <span class="cart-count">0</span></a>
+      <div class="menu-toggle" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <!-- Mobile Side Navbar -->
+    <div class="side-navbar" id="sideNav">
+      <i class="fa-solid fa-xmark close-sidenav" id="closeSideNav"></i>
+      <ul class="side-nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="collections.html">Collections</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Collection Container -->
+  <div class="collections-wrapper">
+    <!-- Sidebar Filters -->
+    <aside class="filter-sidebar">
+      <h3><i class="fa-solid fa-filter"></i> Filters</h3>
+      
+      <!-- Search Input -->
+      <div class="filter-group">
+        <label for="searchInput">Search Products</label>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Brand, dress type, floral...">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <!-- Gender Filter -->
+      <div class="filter-group">
+        <h4>Gender</h4>
+        <label><input type="checkbox" class="filter-checkbox" value="men"> Men</label>
+        <label><input type="checkbox" class="filter-checkbox" value="women"> Women</label>
+        <label><input type="checkbox" class="filter-checkbox" value="unisex"> Unisex</label>
+      </div>
+
+      <!-- Dress Type Filter -->
+      <div class="filter-group">
+        <h4>Category</h4>
+        <label><input type="checkbox" class="filter-checkbox" value="casual"> Casual Wear</label>
+        <label><input type="checkbox" class="filter-checkbox" value="sports"> Sports Wear</label>
+        <label><input type="checkbox" class="filter-checkbox" value="ethnic"> Ethnic Wear</label>
+        <label><input type="checkbox" class="filter-checkbox" value="western"> Western Wear</label>
+      </div>
+
+      <!-- Brand Filter -->
+      <div class="filter-group">
+        <h4>Brands</h4>
+        <label><input type="checkbox" class="filter-checkbox" value="nike"> Nike</label>
+        <label><input type="checkbox" class="filter-checkbox" value="adidas"> Adidas</label>
+        <label><input type="checkbox" class="filter-checkbox" value="puma"> Puma</label>
+        <label><input type="checkbox" class="filter-checkbox" value="us polo"> US Polo</label>
+        <label><input type="checkbox" class="filter-checkbox" value="basics"> Basics</label>
+        <label><input type="checkbox" class="filter-checkbox" value="biba"> Biba</label>
+      </div>
+    </aside>
+
+    <!-- Products Section -->
+    <main class="collection-products">
+      <h2>All Collections</h2>
+      <p id="productCount">Showing all items</p>
+
+      <div class="product-grid-4" id="productsContainer">
+        
+        <!-- Nike Products (4) -->
+        <div class="product-card" data-tags="nike men sports casual western blue jersey">
+          <img src="images/nike/nike1.jpg" alt="Nike Dri-FIT T-Shirt">
+          <div class="product-info">
+            <h3>Nike Dri-FIT Sports Tee</h3>
+            <p class="brand-name">Nike</p>
+            <p class="price">$1499</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="nike unisex sports hoodie western casual black">
+          <img src="images/nike/nike2.jpg" alt="Nike Pullover Hoodie">
+          <div class="product-info">
+            <h3>Nike Air Fleece Hoodie</h3>
+            <p class="brand-name">Nike</p>
+            <p class="price">$2499</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="nike women sports fitness leggings western">
+          <img src="images/nike/nike3.jpg" alt="Nike Pro Training Tights">
+          <div class="product-info">
+            <h3>Nike High-Rise Leggings</h3>
+            <p class="brand-name">Nike</p>
+            <p class="price">$1899</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="nike men sports jacket casual western">
+          <img src="images/nike/nike4.jpg" alt="Nike Windrunner Jacket">
+          <div class="product-info">
+            <h3>Nike Windrunner Jacket</h3>
+            <p class="brand-name">Nike</p>
+            <p class="price">$3499</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Adidas Products (4) -->
+        <div class="product-card" data-tags="adidas unisex sports tracksuit western black">
+          <img src="images/adidas/adidas1.jpg" alt="Adidas Tracksuit">
+          <div class="product-info">
+            <h3>Adidas Classics Tracksuit</h3>
+            <p class="brand-name">Adidas</p>
+            <p class="price">$3299</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="adidas men casual sports t-shirt cotton">
+          <img src="images/adidas/adidas2.jpg" alt="Adidas Logo Tee">
+          <div class="product-info">
+            <h3>Adidas Trefoil Logo Tee</h3>
+            <p class="brand-name">Adidas</p>
+            <p class="price">$1299</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="adidas women sports tank top fitness western">
+          <img src="images/adidas/adidas3.jpg" alt="Adidas Sports Tank">
+          <div class="product-info">
+            <h3>Adidas Performance Tank Top</h3>
+            <p class="brand-name">Adidas</p>
+            <p class="price">$1099</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="adidas men casual shorts sports summer">
+          <img src="images/adidas/adidas4.jpg" alt="Adidas Sweat Shorts">
+          <div class="product-info">
+            <h3>Adidas Essential Sweat Shorts</h3>
+            <p class="brand-name">Adidas</p>
+            <p class="price">$1399</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Puma Products (4) -->
+        <div class="product-card" data-tags="puma men casual jacket western streetwear">
+          <img src="images/puma/puma1.jpg" alt="Puma Puffer Jacket">
+          <div class="product-info">
+            <h3>Puma Motorsport Jacket</h3>
+            <p class="brand-name">Puma</p>
+            <p class="price">$3999</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="puma women sports Graphic T-Shirt casual">
+          <img src="images/puma/puma2.jpg" alt="Puma Graphic Tee">
+          <div class="product-info">
+            <h3>Puma Cat Print Graphic Tee</h3>
+            <p class="brand-name">Puma</p>
+            <p class="price">$999</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="puma unisex sports jogger pants casual western">
+          <img src="images/puma/puma3.jpg" alt="Puma Slim Joggers">
+          <div class="product-info">
+            <h3>Puma Slim Fit Sweatpants</h3>
+            <p class="brand-name">Puma</p>
+            <p class="price">$1799</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="puma women sports sports gym fitness">
+          <img src="images/puma/puma4.jpg" alt="Puma Sports">
+          <div class="product-info">
+            <h3>Puma Sports Wear</h3>
+            <p class="brand-name">Puma</p>
+            <p class="price">$1199</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- US Polo Products (4) -->
+        <div class="product-card" data-tags="us polo men casual shirt western formal white">
+          <img src="images/uspolo/uspolo1.jpg" alt="US Polo Solid Shirt">
+          <div class="product-info">
+            <h3>US Polo Solid Oxford Shirt</h3>
+            <p class="brand-name">US Polo</p>
+            <p class="price">$2199</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="us polo men casual polo t-shirt cotton red">
+          <img src="images/uspolo/uspolo2.jpg" alt="US Polo Classic Polo">
+          <div class="product-info">
+            <h3>US Polo Pique Cotton Polo</h3>
+            <p class="brand-name">US Polo</p>
+            <p class="price">$1699</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="us polo women casual denim western shirt">
+          <img src="images/uspolo/uspolo3.jpg" alt="US Polo Women Denim Shirt">
+          <div class="product-info">
+            <h3>US Polo Women Denim Shirt</h3>
+            <p class="brand-name">US Polo</p>
+            <p class="price">$2399</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="us polo unisex casual chinos trousers western brown">
+          <img src="images/uspolo/uspolo4.jpg" alt="US Polo Chino Pants">
+          <div class="product-info">
+            <h3>US Polo Stretch Slim Chinos</h3>
+            <p class="brand-name">US Polo</p>
+            <p class="price">$2599</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Basics Products (4) -->
+        <div class="product-card" data-tags="basics men casual printed shirt floral summer">
+          <img src="images/basics/basics1.jpg" alt="Basics Floral Casual Shirt">
+          <div class="product-info">
+            <h3>Basics Floral Print Summer Shirt</h3>
+            <p class="brand-name">Basics</p>
+            <p class="price">$1599</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="basics men casual denim jeans western blue">
+          <img src="images/basics/basics2.jpg" alt="Basics Slim Fit Jeans">
+          <div class="product-info">
+            <h3>Basics Slim Fit Blue Jeans</h3>
+            <p class="brand-name">Basics</p>
+            <p class="price">$2199</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="basics men casual checked shirt dailywear">
+          <img src="images/basics/basics3.jpg" alt="Basics Checkered Shirt">
+          <div class="product-info">
+            <h3>Basics Casual Checkered Shirt</h3>
+            <p class="brand-name">Basics</p>
+            <p class="price">$1499</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="basics unisex casual plain t-shirt dailywear grey">
+          <img src="images/basics/basics4.jpg" alt="Basics Plain Crew Tee">
+          <div class="product-info">
+            <h3>Basics Soft Cotton Crew Tee</h3>
+            <p class="brand-name">Basics</p>
+            <p class="price">$699</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <!-- Biba Products (4) -->
+        <div class="product-card" data-tags="biba women ethnic kurta set floral silk traditional">
+          <img src="images/biba/biba1.jpg" alt="Biba Printed Kurta">
+          <div class="product-info">
+            <h3>Biba Floral Cotton Kurta Set</h3>
+            <p class="brand-name">Biba</p>
+            <p class="price">$2799</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="biba women ethnic anarkali dress floral festival">
+          <img src="images/biba/biba2.jpg" alt="Biba Anarkali Dress">
+          <div class="product-info">
+            <h3>Biba Flowy Anarkali Suit</h3>
+            <p class="brand-name">Biba</p>
+            <p class="price">$3899</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="biba women ethnic straight kurta dailywear yellow">
+          <img src="images/biba/biba3.jpg" alt="Biba Straight Fit Kurta">
+          <div class="product-info">
+            <h3>Biba Daily Wear Cotton Kurta</h3>
+            <p class="brand-name">Biba</p>
+            <p class="price">$1599</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-tags="biba women ethnic fusion dress western floral">
+          <img src="images/biba/biba4.jpg" alt="Biba Indo-Western Fusion Dress">
+          <div class="product-info">
+            <h3>Biba Indo-Western Maxi Dress</h3>
+            <p class="brand-name">Biba</p>
+            <p class="price">$3199</p>
+            <button class="add-cart-btn"><i class="fa-solid fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>Nostra</h3>
+        <p>Your one-stop destination for modern trends, premium streetwear, and everyday fashion essentials.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="collections.html">Collections</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nostra E-Commerce. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
